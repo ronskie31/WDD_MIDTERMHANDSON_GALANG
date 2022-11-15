@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme7.css">
+</head>
+
+<body>
+    <div class="form-body" class="container-fluid">
+        <div class="website-logo">
+            <a href="app.html">
+
+            </a>
+        </div>
+        <div class="row">
+            <div class="img-holder">
+                <div class="bg"></div>
+                <div class="info-holder">
+                    <img src="https://i.pinimg.com/564x/e6/60/56/e66056592e4c2ff08546d43c42948f98.jpg" alt="">
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Registration Form</h3>
+
+                        <div class="page-links">
+                            <a class="active">REGISTER</a><a href="info.html">INFO</a>
+                        </div>
+
+                        <form method="post" action="register.php" enctype="multipart/form-data">
+
+                            <input type="text" name="fname" placeholder="Firstname" required>
+                            <input type="text" name="lname" placeholder="Lastname" required>
+                            <input type="text" name="add" placeholder="Address" required>
+                            <input type="text" name="email" placeholder="Email" required>
+                            <input type="date" id="birthday" name="bday" required>
+                            <input type="password" name="pass" placeholder="Password" required>
+                            <input type="password" name="cpass" placeholder="Confirm Password" required>
+                            <input type="file" name="image[]" />
+                            <div class="form-button">
+                                <center>
+                                    <button id="submit" type="submit" class="ibtn" name='submit'>Submit</button>
+                                </center>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
